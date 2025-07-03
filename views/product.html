@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pơ Lang – Tất cả sản phẩm</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/9c5a7de44c.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Quicksand', sans-serif;
+    }
+    body {
+      background: #fff;
+      color: #333;
+    }
+    header {
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url('https://www.polangvietnam.com/wp-content/uploads/2024/09/0F0A9645.jpg') no-repeat center center/cover;
+      color: #fff;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+    nav.navbar {
+      background: #1b1b1b;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav.navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    nav.navbar a:hover {
+      color: #f39c12;
+    }
+    .filter-container {
+      padding: 20px;
+      text-align: center;
+      background: #f9f9f9;
+    }
+    .filter-container button {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      background: #2c3e50;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .filter-container button:hover {
+      background: #f39c12;
+      transform: scale(1.05);
+    }
+    .filter-container button.active {
+      background: #f39c12;
+    }
+    .product-grid {
+      max-width: 1200px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .product-item {
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, opacity 0.5s ease;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    .product-item.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .product-item:hover {
+      transform: translateY(-5px);
+    }
+    .product-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .product-item p {
+      font-size: 0.95rem;
+      color: #444;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+    .product-price {
+      font-size: 1rem;
+      color: #f39c12;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .product-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      color: #444;
+    }
+    .product-meta span {
+      display: flex;
+      align-items: center;
+    }
+    .product-meta i {
+      color: #f39c12;
+      margin-right: 5px;
+    }
+    footer {
+      background: #1b1b1b;
+      color: #ddd;
+      padding: 40px;
+      text-align: center;
+    }
+    footer a.social-link, footer a.contact-link {
+      color: #f39c12;
+      text-decoration: none;
+      margin: 0 5px;
+      transition: transform 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+    }
+    footer a.social-link:hover, footer a.contact-link:hover {
+      transform: scale(1.2);
+    }
+    footer a.social-link span.emoji {
+      margin-right: 5px;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tất cả sản phẩm Pơ Lang</h1>
+  </header>
+
+  <nav class="navbar">
+    <a href="index.html">Trang chủ</a>
+    <a href="#about">Vì sao Pơ Lang</a>
+    <a href="#ingredients">Nguyên liệu</a>
+    <a href="#products">Sản phẩm</a>
+    <a href="#achievements">Thành tựu</a>
+    <a href="#contact">Liên hệ</a>
+  </nav>
+
+  <div class="filter-container">
+    <button class="filter-btn active" data-filter="all">Tất cả</button>
+    <button class="filter-btn" data-filter="soap">Xà phòng</button>
+    <button class="filter-btn" data-filter="bath-salt">Muối tắm</button>
+    <button class="filter-btn" data-filter="oil">Dầu dưỡng</button>
+  </div>
+
+  <div class="product-grid">
+    <div class="product-item" data-id="1" data-category="soap">
+      <a href="detail.html?id=1">
+        <img src="https://www.polangvietnam.com/wp-content/uploads/2025/01/kiotviet_c73c406a87aa88036d04e320c2dadb3c-466x500.jpg" alt="Xà phòng bơ" />
+      </a>
+      <p>Xà phòng chăm sóc da từ quả bơ thiên nhiên, an toàn, đạt chuẩn OCOP.</p>
+      <div class="product-price"></div>
+      <div class="product-meta">
+        <span class="product-rating"><i class="fas fa-star"></i></span>
+        <span class="product-purchases"><i class="fas fa-shopping-bag"></i></span>
+      </div>
+    </div>
+    <div class="product-item" data-id="2" data-category="bath-salt">
+      <a href="detail.html?id=2">
+        <img src="https://www.polangvietnam.com/wp-content/uploads/2025/01/kiotviet_c73c406a87aa88036d04e320c2dadb3c-466x500.jpg" alt="Muối tắm bơ" />
+      </a>
+      <p>Muối tắm giúp làn da mịn màng, nhẹ dịu, chiết xuất từ thiên nhiên.</p>
+      <div class="product-price"></div>
+      <div class="product-meta">
+        <span class="product-rating"><i class="fas fa-star"></i></span>
+        <span class="product-purchases"><i class="fas fa-shopping-bag"></i></span>
+      </div>
+    </div>
+    <div class="product-item" data-id="3" data-category="oil">
+      <a href="detail.html?id=3">
+        <img src="https://www.polangvietnam.com/wp-content/uploads/2025/01/kiotviet_c73c406a87aa88036d04e320c2dadb3c-466x500.jpg" alt="Dầu dưỡng bơ" />
+      </a>
+      <p>Dầu dưỡng từ bơ và gấc, nuôi dưỡng làn da mềm mại, tự nhiên.</p>
+      <div class="product-price"></div>
+      <div class="product-meta">
+        <span class="product-rating"><i class="fas fa-star"></i></span>
+        <span class="product-purchases"><i class="fas fa-shopping-bag"></i></span>
+      </div>
+    </div>
+    <div class="product-item" data-id="4" data-category="soap">
+      <a href="detail.html?id=4">
+        <img src="https://www.polangvietnam.com/wp-content/uploads/2025/01/kiotviet_c73c406a87aa88036d04e320c2dadb3c-466x500.jpg" alt="Xà phòng cà phê" />
+      </a>
+      <p>Xà phòng cà phê robusta, tẩy tế bào chết, làm sáng da.</p>
+      <div class="product-price"></div>
+      <div class="product-meta">
+        <span class="product-rating"><i class="fas fa-star"></i></span>
+        <span class="product-purchases"><i class="fas fa-shopping-bag"></i></span>
+      </div>
+    </div>
+    <div class="product-item" data-id="5" data-category="bath-salt">
+      <a href="detail.html?id=5">
+        <img src="https://www.polangvietnam.com/wp-content/uploads/2025/01/kiotviet_c73c406a87aa88036d04e320c2dadb3c-466x500.jpg" alt="Muối tắm gấc" />
+      </a>
+      <p>Muối tắm gấc, thư giãn và làm mềm da, đạt chuẩn OCOP.</p>
+      <div class="product-price"></div>
+      <div class="product-meta">
+        <span class="product-rating"><i class="fas fa-star"></i></span>
+        <span class="product-purchases"><i class="fas fa-shopping-bag"></i></span>
+      </div>
+    </div>
+    <div class="product-item" data-id="6" data-category="oil">
+      <a href="detail.html?id=6">
+        <img src="https://www.polangvietnam.com/wp-content/uploads/2025/01/kiotviet_c73c406a87aa88036d04e320c2dadb3c-466x500.jpg" alt="Dầu dưỡng cà phê" />
+      </a>
+      <p>Dầu dưỡng cà phê robusta, cấp ẩm sâu, phù hợp mọi loại da.</p>
+      <div class="product-price"></div>
+      <div class="product-meta">
+        <span class="product-rating"><i class="fas fa-star"></i></span>
+        <span class="product-purchases"><i class="fas fa-shopping-bag"></i></span>
+      </div>
+    </div>
+    <div class="product-item" data-id="7" data-category="soap">
+      <a href="detail.html?id=7">
+        <img src="https://www.polangvietnam.com/wp-content/uploads/2025/01/kiotviet_c73c406a87aa88036d04e320c2dadb3c-466x500.jpg" alt="Xà phòng thiên nhiên" />
+      </a>
+      <p>Giải pháp chăm sóc toàn diện từ bơ, gấc và cà phê robusta Tây Nguyên.</p>
+      <div class="product-price"></div>
+      <div class="product-meta">
+        <span class="product-rating"><i class="fas fa-star"></i></span>
+        <span class="product-purchases"><i class="fas fa-shopping-bag"></i></span>
+      </div>
+    </div>
+  </div>
+
+  <footer id="contact">
+    <p>© 2025 Pơ Lang – Công ty TNHH SX & TM Pơ Lang</p>
+    <p>Địa chỉ: 624 Hùng Vương, Buôn Ma Thuột, Đắk Lắk</p>
+    <p>Zalo/Phone: <a href="tel:0941715717" class="contact-link">0941715717</a> | Email: <a href="mailto:cskh@polangflower.vn" class="contact-link">cskh@polangflower.vn</a></p>
+    <p>
+      Theo dõi Pơ Lang tại: <br />
+      <a href="https://shopee.vn/polangvn?entryPoint=ShopBySearch&searchKeyword=p%C6%A1%20lang" target="_blank" rel="noopener" class="social-link"><span class="emoji"><i class="fa-solid fa-bag-shopping"></i></span>Shopee</a> |
+      <a href="https://www.facebook.com/polangvn" target="_blank" rel="noopener" class="social-link"><span class="emoji"><i class="fab fa-facebook-f"></i></span>Facebook</a> |
+      <a href="https://www.youtube.com/@polangvn" target="_blank" rel="noopener" class="social-link"><span class="emoji"><i class="fab fa-youtube"></i></span>YouTube</a> |
+      <a href="https://www.tiktok.com/@polangvn" target="_blank" rel="noopener" class="social-link"><span class="emoji"><i class="fab fa-tiktok"></i></span>TikTok</a>
+    </p>
+  </footer>
+
+  <script>
+    // Filter functionality
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const productItems = document.querySelectorAll('.product-item');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        const filter = button.getAttribute('data-filter');
+        productItems.forEach(item => {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            item.style.display = 'block';
+            setTimeout(() => item.classList.add('show'), 10);
+          } else {
+            item.classList.remove('show');
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Animation on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('show');
+      });
+    }, { threshold: 0.2 });
+    productItems.forEach(item => observer.observe(item));
+
+    // Random data for products
+    productItems.forEach(item => {
+      const price = Math.floor(Math.random() * (300000 - 50000 + 1)) + 50000;
+      item.querySelector('.product-price').textContent = price.toLocaleString('vi-VN') + ' VND';
+      const rating = (Math.random() * (5.0 - 3.5) + 3.5).toFixed(1);
+      const reviews = Math.floor(Math.random() * (500 - 10 + 1)) + 10;
+      item.querySelector('.product-rating').innerHTML = `<i class="fas fa-star"></i> ${rating} (${reviews} đánh giá)`;
+      const purchases = Math.floor(Math.random() * (1000 - 50 + 1)) + 50;
+      item.querySelector('.product-purchases').innerHTML = `<i class="fas fa-shopping-bag"></i> ${purchases} đã mua`;
+    });
+  </script>
+</body>
+</html> 

@@ -1,0 +1,126 @@
+ *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;font-family:'Quicksand',sans-serif;}
+    body{background:#fff;color:#333;}
+    header{height:90vh;display:flex;align-items:center;justify-content:center;
+    background:url('https://www.polangvietnam.com/wp-content/uploads/2024/09/0F0A9645.jpg') no-repeat center center/cover;
+    color:#fff;text-shadow:2px 2px 8px rgba(0,0,0,0.7);}
+    header h1{font-size:3rem;text-align:center;}
+    nav.navbar{background:#1b1b1b;padding:15px;text-align:center;position:sticky;top:0;z-index:10;}
+    nav.navbar a{color:#fff;text-decoration:none;margin:0 15px;font-weight:600;transition:0.3s;}
+    nav.navbar a:hover{color:#f39c12;}
+    section{padding:60px 20px;text-align:center;}
+    section h2{margin-bottom:20px;font-size:2rem;color:#2c3e50;}
+    section p{max-width:800px;margin:auto;color:#555;font-size:1.1rem;line-height:1.6;opacity:0;transform:translateY(20px);transition:0.8s ease-out;}
+    .show{opacity:1;transform:translateY(0);}
+    .parallax{height:60vh;background-attachment:fixed;background-position:center;background-size:cover;}
+    .product-container{max-width:800px;margin:20px auto;display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center;}
+    .product-container img{max-width:100%;height:auto;border-radius:8px;}
+    .product-container p{text-align:left;}
+    footer{background:#1b1b1b;color:#ddd;padding:40px;text-align:center;}
+    .product-slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 30px;
+      padding: 20px;
+      scroll-snap-type: x mandatory;
+    }
+    .product-slider::-webkit-scrollbar {
+      display: none;
+    }
+    .product-item {
+      flex: 0 0 300px;
+      scroll-snap-align: start;
+      background: #f9f9f9;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .product-item:hover {
+      transform: translateY(-5px);
+    }
+    .product-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .product-item p {
+      font-size: 0.95rem;
+      color: #444;
+      text-align: left;
+    }
+    footer a.social-link, footer a.contact-link {
+      color: #f39c12;
+      text-decoration: none;
+      margin: 0 5px;
+      transition: transform 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+    }
+    footer a.social-link:hover, footer a.contact-link:hover {
+      transform: scale(1.2);
+    }
+    footer a.social-link span.emoji {
+      margin-right: 5px;
+      font-size: 1.2rem;
+    }
+
+    .blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+.blog-card {
+  background: #111;
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+}
+.blog-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.blog-card .date {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #84bd00;
+  color: #000;
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+.blog-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.blog-card p {
+  font-size: 0.95rem;
+  color: #ddd;
+}
+a.blog-card {
+  background: #111;
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+  text-decoration: none;
+  display: block;
+}
+a.blog-card h3, a.blog-card p {
+  color: #fff;
+}
+a.blog-card:hover {
+  background: #222;
+}
