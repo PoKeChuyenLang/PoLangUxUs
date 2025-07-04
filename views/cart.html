@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pơ Lang – Chi tiết sản phẩm</title>
+  <title>Pơ Lang – Giỏ hàng</title>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/9c5a7de44c.js" crossorigin="anonymous"></script>
   <style>
@@ -48,14 +48,12 @@
       transition: 0.3s;
     }
     nav.navbar a:hover {
- vergeten: #f39c12;
+      color: #f39c12;
     }
-    .product-detail {
+    .cart-section {
       max-width: 1200px;
       margin: 40px auto;
       padding: 20px;
-      display: flex;
-      gap: 30px;
       background: #f9f9f9;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -63,70 +61,73 @@
       transform: translateY(20px);
       transition: opacity 0.8s ease, transform 0.8s ease;
     }
-    .product-detail.show {
+    .cart-section.show {
       opacity: 1;
       transform: translateY(0);
     }
-    .product-image {
-      flex: 1;
-    }
-    .product-image img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-    .product-info {
-      flex: 1;
-      padding: 20px;
-    }
-    .product-info h2 {
+    .cart-section h2 {
       font-size: 1.8rem;
       color: #2c3e50;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
+      text-align: center;
     }
-    .product-price {
-      font-size: 1.2rem;
-      color: #f39c12;
+    .cart-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    .cart-table th, .cart-table td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    .cart-table th {
+      background: #2c3e50;
+      color: #fff;
       font-weight: 600;
-      margin-bottom: 10px;
     }
-    .product-meta {
-      display: flex;
-      gap: 20px;
-      font-size: 0.95rem;
-      color: #444;
-      margin-bottom: 15px;
+    .cart-table td {
+      vertical-align: middle;
     }
-    .product-meta span {
-      display: flex;
-      align-items: center;
+    .cart-table img {
+      width: 80px;
+      height: auto;
+      border-radius: 5px;
     }
-    .product-meta i {
-      color: #f39c12;
-      margin-right: 5px;
+    .cart-table input[type="number"] {
+      width: 60px;
+      padding: 5px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      text-align: center;
     }
-    .product-info p {
-      font-size: 1rem;
-      color: #555;
-      line-height: 1.6;
-      margin-bottom: 15px;
+    .cart-table .remove-btn {
+      background: #2c3e50;
+      color: #fff;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
     }
-    .product-info h3 {
+    .cart-table .remove-btn:hover {
+      background: #f39c12;
+      transform: scale(1.05);
+    }
+    .cart-total {
+      text-align: right;
       font-size: 1.2rem;
       color: #2c3e50;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
-    .product-info ul {
-      list-style: disc;
-      padding-left: 20px;
-      color: #555;
-      margin-bottom: 15px;
+    .cart-total span {
+      color: #f39c12;
+      font-weight: 600;
     }
-    .product-info ul li {
-      font-size: 1rem;
-      line-height: 1.6;
+    .button-group {
+      text-align: right;
     }
-    .back-btn, .buy-btn {
+    .continue-btn, .checkout-btn {
       display: inline-block;
       padding: 10px 20px;
       background: #2c3e50;
@@ -134,14 +135,20 @@
       text-decoration: none;
       border-radius: 5px;
       transition: background 0.3s ease, transform 0.2s ease;
-      margin-right: 10px;
+      margin-left: 10px;
     }
-    .back-btn:hover, .buy-btn:hover {
+    .continue-btn:hover, .checkout-btn:hover {
       background: #f39c12;
       transform: scale(1.05);
     }
-    .buy-btn i {
+    .continue-btn i, .checkout-btn i {
       margin-right: 5px;
+    }
+    .empty-cart {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #555;
+      padding: 40px;
     }
     footer {
       background: #1b1b1b;
@@ -164,11 +171,34 @@
       margin-right: 5px;
       font-size: 1.2rem;
     }
+    @media (max-width: 768px) {
+      .cart-table th, .cart-table td {
+        padding: 10px;
+        font-size: 0.9rem;
+      }
+      .cart-table img {
+        width: 60px;
+      }
+      .cart-table input[type="number"] {
+        width: 50px;
+      }
+      .cart-total {
+        font-size: 1rem;
+        text-align: center;
+      }
+      .button-group {
+        text-align: center;
+      }
+      .continue-btn, .checkout-btn {
+        padding: 8px 15px;
+        margin: 5px;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Chi tiết sản phẩm Pơ Lang</h1>
+    <h1>Giỏ hàng Pơ Lang</h1>
   </header>
 
   <nav class="navbar">
@@ -180,26 +210,13 @@
     <a href="#contact">Liên hệ</a>
   </nav>
 
-  <section class="product-detail fn-animate">
-    <div class="product-image">
-      <img id="product-img" src="" alt="Sản phẩm Pơ Lang" />
-    </div>
-    <div class="product-info">
-      <h2 id="product-name"></h2>
-      <div class="product-price" id="product-price"></div>
-      <div class="product-meta">
-        <span id="product-rating"><i class="fas fa-star"></i></span>
-        <span id="product-purchases"><i class="fas fa-shopping-bag"></i></span>
-      </div>
-      <p id="product-description"></p>
-      <h3>Thành phần</h3>
-      <ul id="product-ingredients"></ul>
-      <h3>Cách sử dụng</h3>
-      <p id="product-usage"></p>
-      <div class="button-group">
-        <a href="product.html" class="back-btn">Quay lại Sản phẩm</a>
-        <a href="cart.html" id="buy-btn" class="buy-btn"><i class="fas fa-cart-plus"></i> Mua hàng</a>
-      </div>
+  <section class="cart-section fn-animate">
+    <h2>Giỏ hàng của bạn</h2>
+    <div id="cart-content"></div>
+    <div class="cart-total" id="cart-total"></div>
+    <div class="button-group">
+      <a href="product.html" class="continue-btn"><i class="fas fa-arrow-left"></i> Tiếp tục mua sắm</a>
+      <a href="checkout.html" class="checkout-btn"><i class="fas fa-credit-card"></i> Thanh toán</a>
     </div>
   </section>
 
@@ -217,7 +234,7 @@
   </footer>
 
   <script>
-    // Product data
+    // Product data (same as product-detail.html)
     const products = [
       {
         id: 1,
@@ -277,54 +294,92 @@
       }
     ];
 
-    // Get product ID from URL
+    // Load cart from localStorage
+    let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+
+    // Add product from query string
     const urlParams = new URLSearchParams(window.location.search);
     const productId = parseInt(urlParams.get('id'));
-    const product = products.find(p => p.id === productId);
-
-    // Display product details
-    if (product) {
-      document.getElementById('product-img').src = product.image;
-      document.getElementById('product-img').alt = product.name;
-      document.getElementById('product-name').textContent = product.name;
-      document.getElementById('product-description').textContent = product.description;
-
-      // Random price, rating, and purchases
-      const price = Math.floor(Math.random() * (300000 - 50000 + 1)) + 50000;
-      document.getElementById('product-price').textContent = price.toLocaleString('vi-VN') + ' VND';
-      const rating = (Math.random() * (5.0 - 3.5) + 3.5).toFixed(1);
-      const reviews = Math.floor(Math.random() * (500 - 10 + 1)) + 10;
-      document.getElementById('product-rating').innerHTML = `<i class="fas fa-star"></i> ${rating} (${reviews} đánh giá)`;
-      const purchases = Math.floor(Math.random() * (1000 - 50 + 1)) + 50;
-      document.getElementById('product-purchases').innerHTML = `<i class="fas fa-shopping-bag"></i> ${purchases} đã mua`;
-
-      // Ingredients list
-      const ingredientsList = document.getElementById('product-ingredients');
-      product.ingredients.forEach(ingredient => {
-        const li = document.createElement('li');
-        li.textContent = ingredient;
-        ingredientsList.appendChild(li);
-      });
-
-      document.getElementById('product-usage').textContent = product.usage;
-
-      // Add click event for buy button
-      document.getElementById('buy-btn').addEventListener('click', (e) => {
-        e.preventDefault();
-        window.location.href = `cart.html?id=${productId}`;
-      });
-    } else {
-      document.querySelector('.product-detail').innerHTML = '<p>Sản phẩm không tồn tại.</p>';
+    if (productId) {
+      const product = products.find(p => p.id === productId);
+      if (product && !cart.find(item => item.id === productId)) {
+        const price = Math.floor(Math.random() * (300000 - 50000 + 1)) + 50000;
+        cart.push({ id: productId, name: product.name, image: product.image, price: price, quantity: 1 });
+        localStorage.setItem('cart', JSON.stringify(cart));
+      }
     }
 
+    // Display cart
+    function displayCart() {
+      const cartContent = document.getElementById('cart-content');
+      const cartTotal = document.getElementById('cart-total');
+      if (cart.length === 0) {
+        cartContent.innerHTML = '<p class="empty-cart">Giỏ hàng của bạn đang trống.</p>';
+        cartTotal.innerHTML = '';
+        return;
+      }
+
+      let total = 0;
+      let table = `
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Hình ảnh</th>
+              <th>Sản phẩm</th>
+              <th>Giá</th>
+              <th>Số lượng</th>
+              <th>Tổng</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+      `;
+      cart.forEach((item, index) => {
+        const itemTotal = item.price * item.quantity;
+        total += itemTotal;
+        table += `
+          <tr>
+            <td><img src="${item.image}" alt="${item.name}" /></td>
+            <td>${item.name}</td>
+            <td>${item.price.toLocaleString('vi-VN')} VND</td>
+            <td><input type="number" min="1" value="${item.quantity}" onchange="updateQuantity(${index}, this.value)"></td>
+            <td>${itemTotal.toLocaleString('vi-VN')} VND</td>
+            <td><button class="remove-btn" onclick="removeFromCart(${index})"><i class="fas fa-trash"></i> Xóa</button></td>
+          </tr>
+        `;
+      });
+      table += '</tbody></table>';
+      cartContent.innerHTML = table;
+      cartTotal.innerHTML = `Tổng cộng: <span>${total.toLocaleString('vi-VN')} VND</span>`;
+    }
+
+    // Update quantity
+    function updateQuantity(index, quantity) {
+      quantity = parseInt(quantity);
+      if (quantity < 1) quantity = 1;
+      cart[index].quantity = quantity;
+      localStorage.setItem('cart', JSON.stringify(cart));
+      displayCart();
+    }
+
+    // Remove item from cart
+    function removeFromCart(index) {
+      cart.splice(index, 1);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      displayCart();
+    }
+
+    // Initial display
+    displayCart();
+
     // Animation on scroll
-    const detailSection = document.querySelector('.product-detail');
+    const cartSection = document.querySelector('.cart-section');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) entry.target.classList.add('show');
       });
     }, { threshold: 0.2 });
-    observer.observe(detailSection);
+    observer.observe(cartSection);
   </script>
 </body>
 </html>
