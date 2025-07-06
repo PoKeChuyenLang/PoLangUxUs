@@ -124,3 +124,52 @@ a.blog-card h3, a.blog-card p {
 a.blog-card:hover {
   background: #222;
 }
+#achievements {
+            display: flex;
+            justify-content: space-between;
+            height: 100vh; /* Full height of the section */
+            width: 100%; /* Full width of the section */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .image-col {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-col img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image fills the space without distortion */
+        }
+        .text-col {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #4a704a; /* Green background for text column */
+            color: white;
+        }
+        .text-col h2 {
+            text-align: center;
+            margin: 0;
+        }
+        .text-col p {
+            margin: 20px 0;
+        }
+        .text-col button {
+            background-color: #d3a625;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            align-self: center;
+            width: 150px;
+        }
+        .text-col button:hover {
+            background-color: #b78c1f;
+        }

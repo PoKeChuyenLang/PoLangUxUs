@@ -1,135 +1,166 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pơ Lang – Mỹ phẩm từ quả bơ</title>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
- 
+  <!-- Add Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
+
 <body>
   <header>
     <h1>Pơ Lang – Mỹ phẩm thiên nhiên từ quả bơ</h1>
   </header>
-<nav class="navbar">
-  <a href="#about">Pơ Lang</a>
-  <a href="#aboutus">Về chúng tôi</a>
-  <a href="#ingredients">Nguyên liệu</a>
-  <a href="#products">Sản phẩm</a>
-  <a href="#achievements">Thành tựu</a>
-  <a href="#contact">Liên hệ</a>
-</nav>
-
+  <nav class="navbar">
+    <a href="#about">Pơ Lang</a>
+    <a href="#aboutus">Về chúng tôi</a>
+    <a href="#ingredients">Nguyên liệu</a>
+    <a href="#products">Sản phẩm</a>
+    <a href="#achievements">PƠ KỂ CHUYỆN LÀNG </a>
+    <a href="#contact">Liên hệ</a>
+  </nav>
 
   <section id="about">
     <h2>Vì sao chọn Pơ Lang?</h2>
     <p class="fn-animate">
-      Pơ Lang kể câu chuyện về quả bơ tươi vùng Tây Nguyên, kết hợp giá trị địa phương, cam kết mỹ phẩm sạch – lành tính cho làn da phụ nữ Việt.
+      Pơ Lang kể câu chuyện về quả bơ tươi vùng Tây Nguyên, kết hợp giá trị địa phương, cam kết mỹ phẩm sạch – lành tính
+      cho làn da phụ nữ Việt.
     </p>
   </section>
 
-  <div class="parallax" style="background-image:url('https://www.polangvietnam.com/wp-content/uploads/2024/09/0F0A9601.jpg');"></div>
+  <div class="parallax"
+    style="background-image:url('https://www.polangvietnam.com/wp-content/uploads/2024/09/0F0A9601.jpg');"></div>
 
- <section id="aboutus">
-  <h2>Về Pơ Lang</h2>
-  <div class="blog-grid">
-    <div class="blog-card">
-      <img src="https://polangvietnam.com/wp-content/uploads/2023/12/caphe.jpg" alt="Chứng nhận Hàng Việt Nam Chất lượng cao">
-      <div class="date"><span>04</span><br>Th6</div>
-      <h3>Mỹ Phẩm Pơ Lang Đạt Chứng nhận Hàng Việt Nam Chất Lượng Cao 2025</h3>
-      <p>Pơ Lang – Hành Trình Chinh Phục Lòng Tin Người Tiêu Dùng Là thương hiệu...</p>
+  <section id="aboutus">
+    <h2>Về Pơ Lang</h2>
+    <div class="swiper blog-slider">
+      <div class="swiper-wrapper">
+        <a href="blog/vepolang.html" class="swiper-slide blog-card">
+          <img src="https://polangvietnam.com/wp-content/uploads/2023/12/caphe.jpg"
+            alt="Chứng nhận Hàng Việt Nam Chất lượng cao" loading="lazy">
+          <div class="date"><span>04</span><br>Th6</div>
+          <h3>Mỹ Phẩm Pơ Lang Đạt Chứng nhận Hàng Việt Nam Chất Lượng Cao 2025</h3>
+          <p>Pơ Lang – Hành Trình Chinh Phục Lòng Tin Người Tiêu Dùng Là thương hiệu...</p>
+        </a>
+
+        <a href="blog/gia-cong-san-pham.html" class="swiper-slide blog-card">
+          <img src="https://polangvietnam.com/wp-content/uploads/2023/12/caphe.jpg" alt="Gia công sản phẩm"
+            loading="lazy">
+          <div class="date"><span>19</span><br>Th3</div>
+          <h3>Gia công sản phẩm</h3>
+          <p>Nội dung đang cập nhật! Liên hệ đăng ký PƠ LANG – ĐẸP THUẦN KHIẾT…</p>
+        </a>
+
+        <a href="blog/blog-po-lang-tinh-yeu.html" class="swiper-slide blog-card">
+          <img src="https://bsamedia.vn/wp-content/uploads/2024/11/khoi-nghiep-xanh-hangpolang-2.jpg"
+            alt="Pơ Lang - Hơn cả mỹ phẩm" loading="lazy">
+          <div class="date"><span>10</span><br>Th3</div>
+          <h3>Pơ Lang - Hơn Cả Mỹ Phẩm, Đó Là Tình Yêu</h3>
+          <p>Pơ Lang mang vẻ đẹp mộc mạc của Tây Nguyên đến làn da Việt với tình yêu...</p>
+        </a>
+
+        <a href="blog/blog-po-lang-gieo-sac.html" class="swiper-slide blog-card">
+  <img src="https://polangvietnam.com/wp-content/uploads/2024/08/4-8.png" alt="Pơ Lang – Gieo sắc từ bơ Việt" loading="lazy">
+  <div class="date"><span>12</span><br>Th4</div>
+  <h3>Pơ Lang – Nơi Bơ Việt Gieo Sắc</h3>
+  <p>Pơ Lang tái định nghĩa vẻ đẹp với bơ Việt và văn hóa Tây Nguyên...</p>
+</a>
+
+        <a href="blog/gia-tri-cua-chung-toi.html" class="swiper-slide blog-card">
+          <img src="https://polangvietnam.com/wp-content/uploads/2023/12/caphe.jpg" alt="Giá trị của chúng tôi"
+            loading="lazy">
+          <div class="date"><span>17</span><br>Th1</div>
+          <h3>Giá trị của chúng tôi</h3>
+          <p>Ước mơ Xanh thật thà cùng nhà Pơ Lang Hoa từ và mỹ ngữ chưa...</p>
+        </a>
+
+        <a href="blog/cau-chuyen-ve-dau-qua-bo.html" class="swiper-slide blog-card">
+          <img src="https://polangvietnam.com/wp-content/uploads/2023/12/caphe.jpg" alt="Câu chuyện về Dầu Quả Bơ"
+            loading="lazy">
+          <div class="date"><span>26</span><br>Th12</div>
+          <h3>Câu chuyện về Dầu Quả Bơ</h3>
+          <p>Tốt nghiệp chuyên ngành sư phạm Sinh học, tôi không theo nghề sư phạm mà…</p>
+        </a>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Navigation -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
-
-    <div class="blog-card">
-      <img src="https://polangvietnam.com/wp-content/uploads/2023/12/caphe.jpg" alt="Gia công sản phẩm">
-      <div class="date"><span>19</span><br>Th3</div>
-      <h3>Gia công sản phẩm</h3>
-      <p>Nội dung đang cập nhật! Liên hệ đăng ký PƠ LANG – ĐẸP THUẦN KHIẾT…</p>
-    </div>
-
-    <div class="blog-card">
-      <img src="https://polangvietnam.com/wp-content/uploads/2023/12/caphe.jpg" alt="Cộng tác viên">
-      <div class="date"><span>19</span><br>Th3</div>
-      <h3>Cộng tác viên</h3>
-      <p>Nội dung đang cập nhật! Liên hệ đăng ký PƠ LANG – ĐẸP THUẦN KHIẾT…</p>
-    </div>
-
-    <div class="blog-card">
-      <img src="https://polangvietnam.com/wp-content/uploads/2023/12/caphe.jpg" alt="Đại lý">
-      <div class="date"><span>19</span><br>Th3</div>
-      <h3>Đại lý</h3>
-      <p>Nội dung đang cập nhật! Liên hệ đăng ký PƠ LANG – ĐẸP THUẦN KHIẾT…</p>
-    </div>
-
-    <div class="blog-card">
-      <img src="https://polangvietnam.com/wp-content/uploads/2023/12/caphe.jpg" alt="Giá trị của chúng tôi">
-      <div class="date"><span>17</span><br>Th1</div>
-      <h3>Giá trị của chúng tôi</h3>
-      <p>Ước mơ Xanh thật thà cùng nhà Pơ Lang Hoa từ và mỹ ngữ chưa...</p>
-    </div>
-
-    <div class="blog-card">
-      <img src="https://polangvietnam.com/wp-content/uploads/2023/12/caphe.jpg" alt="Câu chuyện về Dầu Quả Bơ">
-      <div class="date"><span>26</span><br>Th12</div>
-      <h3>Câu chuyện về Dầu Quả Bơ</h3>
-      <p>Tốt nghiệp chuyên ngành sư phạm Sinh học, tôi không theo nghề sư phạm mà…</p>
-    </div>
-  </div>
-</section>
-
+  </section>
 
   <section id="ingredients">
     <h2>Nguyên liệu & Công nghệ</h2>
     <p class="fn-animate">
-      Kết hợp trái bơ, cà phê robusta honey rang mộc, gấc… tạo ra các sản phẩm như xà phòng, muối tắm, dầu dưỡng – đạt chuẩn OCOP.
+      Kết hợp trái bơ, cà phê robusta honey rang mộc, gấc… tạo ra các sản phẩm như xà phòng, muối tắm, dầu dưỡng – đạt
+      chuẩn OCOP.
     </p>
   </section>
 
-  <div class="parallax" style="background-image:url('https://www.polangvietnam.com/wp-content/uploads/2024/09/0F0A9601.jpg');"></div>
+  <div class="parallax"
+    style="background-image:url('https://www.polangvietnam.com/wp-content/uploads/2024/09/0F0A9601.jpg');"></div>
 
   <section id="products">
     <h2>Sản phẩm nổi bật</h2>
     <div class="product-slider fn-animate">
       <div class="product-item">
         <a href="views/product.html">
-          <img src="https://www.polangvietnam.com/wp-content/uploads/2025/01/kiotviet_c73c406a87aa88036d04e320c2dadb3c-466x500.jpg" alt="Sản phẩm Pơ Lang" />
+          <img
+            src="https://www.polangvietnam.com/wp-content/uploads/2025/01/kiotviet_c73c406a87aa88036d04e320c2dadb3c-466x500.jpg"
+            alt="Sản phẩm Pơ Lang" />
         </a>
         <p>Sản phẩm chăm sóc da từ quả bơ thiên nhiên, an toàn, đạt chuẩn OCOP.</p>
       </div>
       <div class="product-item">
         <a href="views/product.html">
-          <img src="https://www.polangvietnam.com/wp-content/uploads/2025/01/kiotviet_c73c406a87aa88036d04e320c2dadb3c-466x500.jpg" alt="Sản phẩm Pơ Lang" />
+          <img
+            src="https://www.polangvietnam.com/wp-content/uploads/2025/01/kiotviet_c73c406a87aa88036d04e320c2dadb3c-466x500.jpg"
+            alt="Sản phẩm Pơ Lang" />
         </a>
         <p>Sản phẩm giúp làn da mịn màng, nhẹ dịu, chiết xuất từ thiên nhiên.</p>
       </div>
       <div class="product-item">
         <a href="views/product.html">
-          <img src="https://www.polangvietnam.com/wp-content/uploads/2025/01/kiotviet_c73c406a87aa88036d04e320c2dadb3c-466x500.jpg" alt="Sản phẩm Pơ Lang" />
+          <img
+            src="https://www.polangvietnam.com/wp-content/uploads/2025/01/kiotviet_c73c406a87aa88036d04e320c2dadb3c-466x500.jpg"
+            alt="Sản phẩm Pơ Lang" />
         </a>
         <p>Sản phẩm giúp làn da mịn màng, nhẹ dịu, chiết xuất từ thiên nhiên.</p>
       </div>
       <div class="product-item">
         <a href="views/product.html">
-          <img src="https://www.polangvietnam.com/wp-content/uploads/2025/01/kiotviet_c73c406a87aa88036d04e320c2dadb3c-466x500.jpg" alt="Sản phẩm Pơ Lang" />
+          <img
+            src="https://www.polangvietnam.com/wp-content/uploads/2025/01/kiotviet_c73c406a87aa88036d04e320c2dadb3c-466x500.jpg"
+            alt="Sản phẩm Pơ Lang" />
         </a>
         <p>Sản phẩm giúp làn da mịn màng, nhẹ dịu, chiết xuất từ thiên nhiên.</p>
       </div>
       <div class="product-item">
         <a href="views/product.html">
-          <img src="https://www.polangvietnam.com/wp-content/uploads/2025/01/kiotviet_c73c406a87aa88036d04e320c2dadb3c-466x500.jpg" alt="Sản phẩm Pơ Lang" />
+          <img
+            src="https://www.polangvietnam.com/wp-content/uploads/2025/01/kiotviet_c73c406a87aa88036d04e320c2dadb3c-466x500.jpg"
+            alt="Sản phẩm Pơ Lang" />
         </a>
         <p>Sản phẩm giúp làn da mịn màng, nhẹ dịu, chiết xuất từ thiên nhiên.</p>
       </div>
       <div class="product-item">
         <a href="views/product.html">
-          <img src="https://www.polangvietnam.com/wp-content/uploads/2025/01/kiotviet_c73c406a87aa88036d04e320c2dadb3c-466x500.jpg" alt="Sản phẩm Pơ Lang" />
+          <img
+            src="https://www.polangvietnam.com/wp-content/uploads/2025/01/kiotviet_c73c406a87aa88036d04e320c2dadb3c-466x500.jpg"
+            alt="Sản phẩm Pơ Lang" />
         </a>
         <p>Sản phẩm giúp làn da mịn màng, nhẹ dịu, chiết xuất từ thiên nhiên.</p>
       </div>
       <div class="product-item">
         <a href="views/product.html">
-          <img src="https://www.polangvietnam.com/wp-content/uploads/2025/01/kiotviet_c73c406a87aa88036d04e320c2dadb3c-466x500.jpg" alt="Sản phẩm Pơ Lang" />
+          <img
+            src="https://www.polangvietnam.com/wp-content/uploads/2025/01/kiotviet_c73c406a87aa88036d04e320c2dadb3c-466x500.jpg"
+            alt="Sản phẩm Pơ Lang" />
         </a>
         <p>Giải pháp chăm sóc toàn diện từ bơ, gấc và cà phê robusta Tây Nguyên.</p>
       </div>
@@ -137,37 +168,108 @@
   </section>
 
   <section id="achievements">
-    <h2>Thành tựu nổi bật</h2>
-    <p class="fn-animate">
-      • Chứng nhận “Hàng Việt Nam chất lượng cao” 2025<br>
-      • Gây tiếng vang Shark Tank mùa 7 thu hút 3 shark đầu tư<br>
-      • Tham gia Lễ hội Cà phê Buôn Ma Thuột năm 2023
-    </p>
-  </section>
+    
+    <div class="image-col">
+            <img src="https://polangvietnam.com/wp-content/uploads/2024/08/6-12.png" alt="Sản phẩm" style="max-width: 100%;">
+        </div>
+        <div class="text-col">
+            <h2>XÀ PHÒNG THIÊN NHIÊN</h2>
+            <p>Kết hợp trà túi lọc với nhãn ngọc sương diaphương nổi tiếng Tày Nguyên nhân cafe robusta honey rang mộc, gấc. Pơ Làng đã cho ra nhãn sáp phẩm chất lượng cao với những thành quả, mùi thơm đậm đà - cafe gấp lăm sach va chạm sóc tuyệt vời.</p>
+            <button onclick="location.href='#aboutus'">Xem bài viết</button>
+        </div>
 
+        
+  </section>
+<section id="popup">
+   
+    <div class="swiper blog-slider">
+      <div class="swiper-wrapper">
+        <a href="blog/vepolang.html" class="swiper-slide blog-card">
+          <img src="https://polangvietnam.com/wp-content/uploads/2023/12/caphe.jpg"
+            alt="Chứng nhận Hàng Việt Nam Chất lượng cao" loading="lazy">
+          <div class="date"><span>04</span><br>Th6</div>
+          <h3>Mỹ Phẩm Pơ Lang Đạt Chứng nhận Hàng Việt Nam Chất Lượng Cao 2025</h3>
+          <p>Pơ Lang – Hành Trình Chinh Phục Lòng Tin Người Tiêu Dùng Là thương hiệu...</p>
+        </a>
+
+        <a href="blog/blog-po-lang-tinh-yeu.html" class="swiper-slide blog-card">
+          <img src="https://bsamedia.vn/wp-content/uploads/2024/11/khoi-nghiep-xanh-hangpolang-2.jpg"
+            alt="Pơ Lang - Hơn cả mỹ phẩm" loading="lazy">
+          <div class="date"><span>10</span><br>Th3</div>
+          <h3>Pơ Lang - Hơn Cả Mỹ Phẩm, Đó Là Tình Yêu</h3>
+          <p>Pơ Lang mang vẻ đẹp mộc mạc của Tây Nguyên đến làn da Việt với tình yêu...</p>
+        </a>
+
+        <a href="blog/blog-po-lang-gieo-sac.html" class="swiper-slide blog-card">
+  <img src="https://polangvietnam.com/wp-content/uploads/2024/08/4-8.png" alt="Pơ Lang – Gieo sắc từ bơ Việt" loading="lazy">
+  <div class="date"><span>12</span><br>Th4</div>
+  <h3>Pơ Lang – Nơi Bơ Việt Gieo Sắc</h3>
+  <p>Pơ Lang tái định nghĩa vẻ đẹp với bơ Việt và văn hóa Tây Nguyên...</p>
+</a>
+
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Navigation -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
   <footer id="contact">
     <p>© 2025 Pơ Lang – Công ty TNHH SX & TM Pơ Lang</p>
     <p>Địa chỉ: 624 Hùng Vương, Buôn Ma Thuột, Đắk Lắk</p>
-    <p>Zalo/Phone: <a href="tel:0941715717" class="contact-link">0941715717</a> | Email: <a href="mailto:cskh@polangflower.vn" class="contact-link">cskh@polangflower.vn</a></p>
+    <p>Zalo/Phone: <a href="tel:0941715717" class="contact-link">0941715717</a> | Email: <a
+        href="mailto:cskh@polangflower.vn" class="contact-link">cskh@polangflower.vn</a></p>
     <p>
       Kết nối với Pơ Lang: <br />
-      <a href="shopee.html" target="_blank" rel="noopener" class="social-link"><span class="emoji"><i class="fa-solid fa-bag-shopping"></i></span> Shopee</a> |
-      <a href="https://www.facebook.com/polangvn" target="_blank" rel="noopener" class="social-link"><span class="emoji"><i class="fab fa-facebook-f"></i></span> Facebook</a> |
-      <a href="https://www.youtube.com/@polangvn" target="_blank" rel="noopener" class="social-link"><span class="emoji"><i class="fab fa-youtube"></i></span> YouTube</a> |
-      <a href="https://www.tiktok.com/@polangvn" target="_blank" rel="noopener" class="social-link"><span class="emoji"><i class="fab fa-tiktok"></i></span> TikTok</a>
+      <a href="shopee.html" target="_blank" rel="noopener" class="social-link"><span class="emoji"><i
+            class="fa-solid fa-bag-shopping"></i></span> Shopee</a> |
+      <a href="https://www.facebook.com/polangvn" target="_blank" rel="noopener" class="social-link"><span
+          class="emoji"><i class="fab fa-facebook-f"></i></span> Facebook</a> |
+      <a href="https://www.youtube.com/@polangvn" target="_blank" rel="noopener" class="social-link"><span
+          class="emoji"><i class="fab fa-youtube"></i></span> YouTube</a> |
+      <a href="https://www.tiktok.com/@polangvn" target="_blank" rel="noopener" class="social-link"><span
+          class="emoji"><i class="fab fa-tiktok"></i></span> TikTok</a>
     </p>
   </footer>
 
   <script src="https://kit.fontawesome.com/9c5a7de44c.js" crossorigin="anonymous"></script>
-
+  <!-- Add Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
+    // Intersection Observer for animations
     const el = [...document.querySelectorAll('.fn-animate')];
-    const observer = new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{
-        if(e.isIntersecting) e.target.classList.add('show');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('show');
       });
-    },{threshold:0.2});
-    el.forEach(e=>observer.observe(e));
+    }, { threshold: 0.2 });
+    el.forEach(e => observer.observe(e));
+
+    // Initialize Swiper for blog slider
+    const blogSwiper = new Swiper('.blog-slider', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    });
   </script>
 </body>
+
 </html>
