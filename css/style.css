@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #fff;
+  background: #eff7dd;
   color: #333;
 }
 
@@ -64,7 +64,7 @@ section h2 {
 section p {
   max-width: 800px;
   margin: 0 auto;
-  color: #555;
+  color: #483528;
   font-size: 1.1rem;
   line-height: 1.6;
   opacity: 0;
@@ -142,7 +142,7 @@ section p {
 
 .product-item h3 {
   font-size: 1.2rem;
-  color: #2c3e50;
+  color: #483528;
   margin: 10px 0;
   flex-grow: 1;
   display: flex;
@@ -170,7 +170,7 @@ section p {
 .product-container p {
   text-align: left;
   font-size: 1rem;
-  color: #333;
+  color: #483528;
   line-height: 1.6;
 }
 
@@ -290,7 +290,7 @@ section p {
 
 .blog-card {
   background: #111;
-  color: #fff;
+  color: #7a5e5e;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -337,22 +337,22 @@ section p {
   font-size: 1.1rem;
   margin-bottom: 10px;
   font-weight: 600;
-  color: #fff;
+  color: #483528;
 }
 
 .blog-card p {
   font-size: 0.95rem;
-  color: #ddd;
+  color: #483528;
 }
 
 a.blog-card {
-  background: #111;
+  background: #bddeb4;
   color: #fff;
   text-decoration: none;
 }
 
 a.blog-card:hover {
-  background: #222;
+  background: #e1ffd2;
 }
 
 #achievements {
