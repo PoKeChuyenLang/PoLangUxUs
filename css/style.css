@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  height: 100vh;
+  height: 120vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -645,3 +645,54 @@ a.blog-card:hover {
     height: 200px;
   }
 }
+
+  .highlight-link {
+    color: #2c3e50; /* Matches existing section h2 color */
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 2rem; /* Matches section h2 font-size */
+    background: linear-gradient(to right, #84bd00 50%, transparent 50%) bottom / 200% 3px no-repeat; /* Animated green underline */
+    padding: 4px 8px;
+    display: inline-block;
+    position: relative;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow for depth */
+    transition: background-position 0.5s ease, color 0.3s ease, transform 0.3s ease;
+  }
+
+  .highlight-link:hover {
+    color: #1ef02c; /* Matches navbar hover color */
+    background-position: -100% 100%; /* Animates the underline to slide in */
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+
+  .highlight-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(132, 189, 0, 0.1); /* Subtle green glow background */
+    border-radius: 8px;
+    z-index: -1;
+    transition: background 0.3s ease;
+  }
+
+  .highlight-link:hover::before {
+    background: rgba(132, 189, 0, 0.2); /* Enhanced glow on hover */
+  }
+
+  @media (max-width: 768px) {
+    .highlight-link {
+      font-size: 1.8rem; /* Matches section h2 for smaller screens */
+      padding: 3px 6px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .highlight-link {
+      font-size: 1.5rem; /* Matches section h2 for smallest screens */
+      padding: 2px 4px;
+    }
+  }
