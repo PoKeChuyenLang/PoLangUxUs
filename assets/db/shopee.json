@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "name": "Son dưỡng môi bơ Pơ Lang 5g",
+        "name": "Pơ Lang Avocado Lip Balm 5g",
         "oldPrice": "180.000",
         "newPrice": "200.000",
         "saled": "3,8k",
@@ -10,7 +10,7 @@
     },
     {
         "id": "2",
-        "name": "Dầu dưỡng da bơ Pơ Lang 30ml",
+        "name": "Pơ Lang Avocado Skin Oil 30ml",
         "oldPrice": "350.000",
         "newPrice": "400.000",
         "saled": "2,7k",
@@ -19,7 +19,7 @@
     },
     {
         "id": "3",
-        "name": "Mặt nạ ngủ bơ Pơ Lang 30g",
+        "name": "Pơ Lang Avocado Sleeping Mask 30g",
         "oldPrice": "150.000",
         "newPrice": "180.000",
         "saled": "1,7k",
@@ -28,7 +28,7 @@
     },
     {
         "id": "4",
-        "name": "Kem dưỡng ẩm bơ Pơ Lang 50g",
+        "name": "Pơ Lang Avocado Moisturizing Cream 50g",
         "oldPrice": "350.000",
         "newPrice": "400.000",
         "saled": "2,7k",
@@ -37,7 +37,7 @@
     },
     {
         "id": "5",
-        "name": "Xà phòng bơ Pơ Lang 100g",
+        "name": "Pơ Lang Avocado Soap Bar 100g",
         "oldPrice": "170.000",
         "newPrice": "210.000",
         "saled": "1,1k",
@@ -46,7 +46,7 @@
     },
     {
         "id": "6",
-        "name": "Dầu gội bơ Pơ Lang 200ml",
+        "name": "Pơ Lang Avocado Shampoo 200ml",
         "oldPrice": "160.000",
         "newPrice": "220.000",
         "saled": "2,3k",
@@ -55,7 +55,7 @@
     },
     {
         "id": "7",
-        "name": "Son dưỡng màu bơ Pơ Lang 3.5g",
+        "name": "Pơ Lang Avocado Tinted Lip Balm 3.5g",
         "oldPrice": "300.000",
         "newPrice": "250.000",
         "saled": "3,2k",
@@ -64,7 +64,7 @@
     },
     {
         "id": "8",
-        "name": "Muối tắm bơ Pơ Lang 200g",
+        "name": "Pơ Lang Avocado Bath Salts 200g",
         "oldPrice": "270.000",
         "newPrice": "300.000",
         "saled": "1,2k",
@@ -73,7 +73,7 @@
     },
     {
         "id": "9",
-        "name": "Serum bơ Pơ Lang 15ml",
+        "name": "Pơ Lang Avocado Serum 15ml",
         "oldPrice": "130.000",
         "newPrice": "170.000",
         "saled": "3,1k",
@@ -82,16 +82,16 @@
     },
     {
         "id": "10",
-        "name": "Kem chống nắng bơ Pơ Lang 50g",
+        "name": "Pơ Lang Avocado Sunscreen 50g",
         "oldPrice": "195.000",
         "newPrice": "230.000",
         "saled": "1,1k",
-        "origin": "Đà Nẵng",
+        "origin": "Hà Nội",
         "saleOff": "15"
     },
     {
         "id": "11",
-        "name": "Tinh chất bơ Pơ Lang 10ml",
+        "name": "Pơ Lang Avocado Essence 10ml",
         "oldPrice": "110.000",
         "newPrice": "130.000",
         "saled": "5,2k",
@@ -100,7 +100,7 @@
     },
     {
         "id": "12",
-        "name": "Dầu tẩy trang bơ Pơ Lang 50ml",
+        "name": "Pơ Lang Avocado Cleansing Oil 50ml",
         "oldPrice": "135.000",
         "newPrice": "170.000",
         "saled": "3,1k",
@@ -109,7 +109,7 @@
     },
     {
         "id": "13",
-        "name": "Kem dưỡng mắt bơ Pơ Lang 15g",
+        "name": "Pơ Lang Avocado Eye Cream 15g",
         "oldPrice": "200.000",
         "newPrice": "210.000",
         "saled": "3,8k",
@@ -118,7 +118,7 @@
     },
     {
         "id": "14",
-        "name": "Balsam môi bơ Pơ Lang 10g",
+        "name": "Pơ Lang Avocado Lip Balsam 10g",
         "oldPrice": "310.000",
         "newPrice": "330.000",
         "saled": "1,9k",
@@ -127,16 +127,16 @@
     },
     {
         "id": "15",
-        "name": "Mặt nạ giấy bơ Pơ Lang 25g",
+        "name": "Pơ Lang Avocado Sheet Mask 25g",
         "oldPrice": "95.000",
         "newPrice": "110.000",
         "saled": "7,1k",
-        "origin": "Đà Nẵng",
+        "origin": "Hà Nội",
         "saleOff": "30"
     },
     {
         "id": "16",
-        "name": "Gel rửa mặt bơ Pơ Lang 100ml",
+        "name": "Pơ Lang Avocado Facial Cleanser 100ml",
         "oldPrice": "150.000",
         "newPrice": "170.000",
         "saled": "2,7k",
@@ -145,7 +145,7 @@
     },
     {
         "id": "17",
-        "name": "Dầu dưỡng tóc bơ Pơ Lang 50ml",
+        "name": "Pơ Lang Avocado Hair Oil 50ml",
         "oldPrice": "270.000",
         "newPrice": "300.000",
         "saled": "1,2k",
@@ -154,7 +154,7 @@
     },
     {
         "id": "18",
-        "name": "Mỹ phẩm thử bơ Pơ Lang 5ml",
+        "name": "Pơ Lang Avocado Cosmetic Sample 5ml",
         "oldPrice": "50.000",
         "newPrice": "70.000",
         "saled": "5,6k",
@@ -163,16 +163,16 @@
     },
     {
         "id": "19",
-        "name": "Kem dưỡng body bơ Pơ Lang 200g",
+        "name": "Pơ Lang Avocado Body Cream 200g",
         "oldPrice": "2.100.000",
         "newPrice": "3.000.000",
         "saled": "1,1k",
-        "origin": "Lào Cai",
+        "origin": "Hà Nội",
         "saleOff": "36"
     },
     {
         "id": "20",
-        "name": "Tẩy tế bào chết bơ Pơ Lang 100g",
+        "name": "Pơ Lang Avocado Exfoliating Scrub 100g",
         "oldPrice": "195.000",
         "newPrice": "250.000",
         "saled": "1,1k",
@@ -181,7 +181,7 @@
     },
     {
         "id": "21",
-        "name": "Dầu massage bơ Pơ Lang 50ml",
+        "name": "Pơ Lang Avocado Massage Oil 50ml",
         "oldPrice": "360.000",
         "newPrice": "420.000",
         "saled": "1,9k",
@@ -190,7 +190,7 @@
     },
     {
         "id": "22",
-        "name": "Mặt nạ thải độc bơ Pơ Lang 50g",
+        "name": "Pơ Lang Avocado Detox Mask 50g",
         "oldPrice": "160.000",
         "newPrice": "185.000",
         "saled": "2,3k",
@@ -199,16 +199,16 @@
     },
     {
         "id": "23",
-        "name": "Son dưỡng ban đêm bơ Pơ Lang 5g",
+        "name": "Pơ Lang Avocado Night Lip Balm 5g",
         "oldPrice": "180.000",
         "newPrice": "200.000",
         "saled": "3,8k",
-        "origin": "Đà Nẵng",
+        "origin": "Hà Nội",
         "saleOff": "27"
     },
     {
         "id": "24",
-        "name": "Kem dưỡng tay bơ Pơ Lang 30g",
+        "name": "Pơ Lang Avocado Hand Cream 30g",
         "oldPrice": "360.000",
         "newPrice": "400.000",
         "saled": "1,9k",
@@ -217,7 +217,7 @@
     },
     {
         "id": "25",
-        "name": "Essence bơ Pơ Lang 20ml",
+        "name": "Pơ Lang Avocado Essence 20ml",
         "oldPrice": "170.000",
         "newPrice": "195.000",
         "saled": "1,2k",
